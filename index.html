@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visitor Analytics</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0a0a0a, #1b1b1b);
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .card {
+      background: rgba(25, 25, 25, 0.95);
+      padding: 50px 40px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+      max-width: 520px;
+      width: 90%;
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    }
+
+    .card h1 {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, #00ff99, #00ccff, #ff6fff);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #bbb;
+      margin-bottom: 25px;
+    }
+
+    .counter-box {
+      background: linear-gradient(145deg, #111, #222);
+      padding: 25px 20px;
+      border-radius: 15px;
+      border: 1px solid #333;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: inset 0 0 10px rgba(0,255,200,0.2);
+    }
+
+    /* Enlarge visitor counter image */
+    .counter-box img {
+      width: 100%;       /* fill container */
+      max-width: 400px;  /* maximum width */
+      height: auto;      /* maintain aspect ratio */
+      image-rendering: auto; /* preserve clarity */
+      display: block;
+    }
+
+    footer {
+      margin-top: 15px;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    footer a {
+      color: #00ccff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #00ffcc;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>📊 Visitor Analytics</h1>
+    <p>Live tracking of your website visitors in real-time</p>
+
+    <div class="counter-box">
+      <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=5f61934899b7b27548443a22ad3cfa019403824e'></script>
+      <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1397595/t/0"></script>
+    </div>
+
+    <footer>
+      Powered by <a href="http://www.freevisitorcounters.com" target="_blank">Free Visitor Counters</a>
+    </footer>
+  </div>
+</body>
+</html>
